@@ -7,7 +7,7 @@ import com.web.store.order.dto.CartResponse;
 
 @FeignClient(
         name = "cart-service",
-        url = "http://localhost:8083")
+        url = "http://cart-service:8083")
 public interface CartClient {
 
     @GetMapping("/cart")
